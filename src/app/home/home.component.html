@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-md-4" *ngFor="let prod of prodlist">
+        <figure class="card card-product">
+            <div class="img-wrap"><img src="../../assets/images/{{prod.image}}"></div>
+            <figcaption class="info-wrap">
+                    <h4 class="title">{{prod.pName}}</h4>
+                    <div class="rating-wrap">
+                        <div class="label-rating">{{prod.pRating}}⭐️</div>
+                    </div> <!-- rating-wrap.// -->
+            </figcaption>
+            <div class="bottom-wrap">
+                <a routerLink="/{{prod.pName}}" class="btn btn-sm btn-primary float-right">Order Now</a>	
+                <div class="price-wrap h5">
+                    <span class="price-new">{{prod.price-prod.price*prod.pSeller.pDiscount | currency:'INR'}}</span>&nbsp; <del class="price-old">{{prod.price|currency:'INR'}}</del>
+                </div> <!-- price-wrap.// -->
+            </div> <!-- bottom-wrap.// -->
+        </figure>
+    </div> 
+</div>    

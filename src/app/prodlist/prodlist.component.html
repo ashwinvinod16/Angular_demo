@@ -1,0 +1,27 @@
+<div class="container">
+  <div class=row >
+    <div class="col-lg-6">
+      <div class="card" style="width: 30rem;">
+      <img  class="card-img-top" src="../../assets/images/{{prod[0].image}}" class="image-responsive">
+      </div>
+    </div>
+    <div class="col-lg-6" >
+      <div class="card">
+        <div class="card-body">
+         <h2>{{prodname}} </h2>
+         <p>{{prod[0].pDescription}}</p>
+         <p>{{prod[0].pRating}}⭐️</p>
+
+         <div class="bottom-wrap">
+          <a  class="btn btn-sm btn-primary float-right">Order Now</a>	
+          <div class="price-wrap h5">
+              <span class="price-new">{{prod[0].price-prod[0].price*prod[0].pSeller.pDiscount | currency:'INR'}}</span>&nbsp; <del class="price-old">{{prod[0].price|currency:'INR'}}</del>
+          </div> <!-- price-wrap.// -->
+         </div> 
+
+        </div>
+      </div>  
+
+    </div> 
+  </div>
+</div>

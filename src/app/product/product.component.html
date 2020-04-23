@@ -1,0 +1,9 @@
+<div class="container-fluid">
+ <div class="row">
+    <div *ngFor="let prods of categorylist" class="card w-30 text-white bg-info my-3 col-lg-6" style="height: 20rem;">
+       <div class="card-body ">
+        <a [routerLink]="prods.Category" class="btn btn-block btn-primary text-uppercase">{{prods.Category}}</a>
+       </div>
+    </div>   
+ </div> 
+</div>
