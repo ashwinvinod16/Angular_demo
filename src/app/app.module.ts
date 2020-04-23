@@ -9,7 +9,6 @@ import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
 import { ProductViewComponent } from './product-view/product-view.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { ProductCreateComponent } from './product-create/product-create.component';
 import { ProdlistComponent } from './prodlist/prodlist.component';
 
 @NgModule({
@@ -19,7 +18,6 @@ import { ProdlistComponent } from './prodlist/prodlist.component';
     ProductComponent,
     ProductViewComponent,
     NavbarComponent,
-    ProductCreateComponent,
     ProdlistComponent
   ],
   imports: [

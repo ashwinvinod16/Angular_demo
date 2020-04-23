@@ -9,9 +9,7 @@ export class ProserviceService {
 
   constructor(private http:HttpClient) { }
 
-  postProduct(data:object):Observable<any>{
-    return this.http.post(`http://localhost:4040/products`,data)
-  }
+  
   listproduct():Observable<any>{
     return this.http.get(`http://localhost:4040/productlist`)
   }
