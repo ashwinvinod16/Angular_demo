@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
       this.prodlist=data;
     })
   }
-
+  // do magic after init
   ngOnInit(): void {
   }
 
