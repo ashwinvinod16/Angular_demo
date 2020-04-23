@@ -11,15 +11,15 @@ export class ProserviceService {
 
   
   listproduct():Observable<any>{
-    return this.http.get(`http://localhost:4040/productlist`)
+    return this.http.get(`https://ecartdemo.herokuapp.com/productlist`)
   }
   listcategory():Observable<any>{
-    return this.http.get(`http://localhost:4040/categorylist`)
+    return this.http.get(`https://ecartdemo.herokuapp.com/categorylist`)
   }
   categoryProducts(cat):Observable<any>{
-    return this.http.get(`http://localhost:4040/products/`+cat);
+    return this.http.get(`https://ecartdemo.herokuapp.com/products/`+cat);
   }
   singleview(name):Observable<any>{
-    return this.http.get(`http://localhost:4040/viewprod/`+name)
+    return this.http.get(`https://ecartdemo.herokuapp.com/viewprod/`+name)
   }
 }
